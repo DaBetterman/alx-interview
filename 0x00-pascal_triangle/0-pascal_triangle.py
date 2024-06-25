@@ -3,6 +3,7 @@
 Pascal's Triangle.
 """
 
+
 def pascal_triangle(nums):
     """
     Generates Pascal's Triangle up to the specified number of rows.
@@ -26,8 +27,10 @@ def pascal_triangle(nums):
         # Every row starts with 1
         row = [1]
         for element in range(1, index):
-            # Each element is the sum of the two elements above it
-            row.append(triangle[index - 1][element - 1] + triangle[index - 1][element])
+            # Each element is the sum of
+            # the two elements above it
+            row.append(triangle[index - 1]
+                       [element - 1] + triangle[index - 1][element])
         # Every row ends with 1
         row.append(1)
         triangle.append(row)

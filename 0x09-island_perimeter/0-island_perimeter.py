@@ -3,13 +3,16 @@
 Module that calculates the perimeter of an island
 """
 
+
 def island_perimeter(grid):
+
     """
     Function to calculate the perimeter of the island.
-    
+
     :param grid: List of list of integers representing the grid.
     :return: Perimeter of the island.
     """
+
     perimeter = 0
     rows = len(grid)
     cols = len(grid[0])

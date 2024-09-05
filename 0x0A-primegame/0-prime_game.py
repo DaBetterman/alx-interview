@@ -12,6 +12,7 @@ def sieve_of_eratosthenes(n):
         i += 1
     return [i for i in range(n + 1) if prime[i]]
 
+
 def isWinner(x, nums):
     """Determine the winner of each game based on the rounds played"""
     if x <= 0 or not nums:
@@ -20,7 +21,7 @@ def isWinner(x, nums):
     # Precompute prime up to the largest number in nums
     max_num = max(nums)
     prime = sieve_of_eratosthenes(max_num)
-    
+
     # Track wins for Maria and Ben
     maria_wins, ben_wins = 0, 0
 

@@ -2,6 +2,8 @@
 """
 0. Prime-game
 """
+
+
 def sieve_of_eratosthenes(n):
     """Generates a list of prime numbers"""
     prime = [True] * (n + 1)
